@@ -13,8 +13,8 @@ int main()
         for(i = 0; i < m; i++){
             scanf("%d", &a[i]); 
         }
-        int max = -5; 
-        int difference = -5;  
+        int max = -200000; 
+        int difference = -200000;  
         for(i = 0; i < m-1; i++)
         {
             if(a[i] > max){
