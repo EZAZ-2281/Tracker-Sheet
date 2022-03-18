@@ -1,12 +1,11 @@
-/* Bismillahir Rahmanir Raheem */
-
 #include <stdio.h>
 int main()
 {
-    int a[10], i, j, temp;
+    int a[4], i;
     for(i = 0; i < 4; i++){
         scanf("%d", &a[i]);
     }
+    int j, temp;
     for(i = 0; i < 4; i++){
         for(j = i + 1; j < 4; j++){
             if(a[i] > a[j]){
@@ -16,11 +15,9 @@ int main()
             }
         }
     }
-    int x, y, z;
-    x = a[3] - a[0];
-    y = a[3] - a[1];
-    z = a[3] - a[2];
-    printf("%d %d %d\n", x, y, z);
-
+    int res1 = a[3] - a[0];
+    int res2 = a[3] - a[1];
+    int res3 = a[3] - a[2];
+    printf("%d %d %d", res1, res2, res3);
     return 0;
 }
