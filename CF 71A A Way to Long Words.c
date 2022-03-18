@@ -1,20 +1,26 @@
-/* Bismillahir Rahmanir Raheem */
-
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
     int t;
     scanf("%d", &t);
-    int i;
-    for(i = 0; i < t; i++)
+    int j;
+    for(j = 0; j < t; j++)
     {
-        char a[101];
+        char a[1005];
         scanf("%s", &a);
-        int l = strlen(a);
-        if(l > 10)
-            printf("%c%d%c\n", a[0], l-2, a[l-1]);
+        int len = strlen(a);
+        int i;
+        if(len > 10)
+        {
+            printf("%c", a[0]);
+            printf("%d", len - 2);
+            printf("%c", a[len-1]);
+            printf("\n");
+        }
         else
+        {
             printf("%s\n", a);
+        }
     }
     return 0;
 }
