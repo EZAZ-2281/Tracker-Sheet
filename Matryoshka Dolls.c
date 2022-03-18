@@ -1,14 +1,15 @@
-/* Bismillahir Rahmanir Raheem */
-
 #include <stdio.h>
 int main()
 {
-    int s, x, count = 0;
+    int s, x;
     scanf("%d %d", &s, &x);
-    while(s != 0){
+    int i = 1, count = 0;
+    while(s != 0)
+    {
         s = s / x;
         count++;
     }
     printf("%d\n", count);
+
     return 0;
 }
