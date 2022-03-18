@@ -1,17 +1,19 @@
-/* Bismillahir Rahmanir Raheem */
-
 #include <stdio.h>
 int main()
 {
-    int n, k, i, rem;
+    int n, k;
     scanf("%d %d", &n, &k);
+    int i;
     for(i = 1; i <= k; i++){
-        rem = n % 10;
-        if(rem == 0)
-            n = n / 10;
-        else
+        if(n % 10 != 0){
             n = n - 1;
+        }
+        else{
+            n = n / 10;
+        }
     }
     printf("%d\n", n);
+
     return 0;
 }
+
