@@ -3,6 +3,27 @@
 #include <stdio.h>
 int main()
 {
+    int n, k, div, rem;
+    while(scanf("%d %d", &n, &k) != EOF)
+    {
+        int count = n;
+        while(n >= k)
+        {
+            div = n / k;
+            count = count + div;
+            rem = n % k;
+            n = div + rem;
+        }
+        printf("%d\n", count);
+    }
+
+    return 0;
+}
+
+Or, 
+#include <stdio.h>
+int main()
+{
     int n, k;
     while(scanf("%d %d", &n, &k) != EOF)
     {
